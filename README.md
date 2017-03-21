@@ -18,7 +18,7 @@
 # 注解检查
 
 ```
-  <!-- 检查注解存在的位置
+        <!-- 检查注解存在的位置
              allowSamelineMultipleAnnotations 是否允许同行存在多个注解 default false
              allowSamelineSingleParameterlessAnnotation 是否允许同行存在无参数的注解  default true
              allowSamelineParameterizedAnnotation 是否允许同行存在带参数的注解  default false
@@ -74,7 +74,7 @@
 # 代码块检查
 
 ```
-  <!--避免嵌套的代码块，如
+        <!--避免嵌套的代码块，如
 
                      public void guessTheOutput(){
                          int whichIsWhich = 0;
@@ -144,7 +144,7 @@
 # 类检查
 
 ```
-   <!--final 类检查，当类的构造方法为 private 时-->
+        <!--final 类检查，当类的构造方法为 private 时-->
         <module name="FinalClass" />
 
         <!--工具类检查，确保没有 public 构造方法-->
@@ -178,7 +178,7 @@
 # 代码检查
 
 ```
-  <!--数组初始化末尾逗号检查-->
+        <!--数组初始化末尾逗号检查-->
         <module name="ArrayTrailingComma" />
 
         <!--三元表达式检查-->
@@ -370,7 +370,7 @@
 # 文件头检查
 
 ```
- <!--检查文件的头部
+        <!--检查文件的头部
             headerFile  指向存放头的文件
             ignoreLines  忽略行
             fileExtensions  扩展名
@@ -393,7 +393,7 @@
 # 导包检查
 
 ```
- <!-- 必须导入类的完整路径，即不能使用*导入所需的类 -->
+        <!-- 必须导入类的完整路径，即不能使用*导入所需的类 -->
         <module name="AvoidStarImport" />
 
         <!--避免静态导入 如 static import xxx-->
@@ -511,7 +511,7 @@
 # 度量检查
 
 ```
-  <!--检查一个表达式中  &&, ||, &, | ， ^ 的最大允许个数-->
+        <!--检查一个表达式中  &&, ||, &, | ， ^ 的最大允许个数-->
         <module name="BooleanExpressionComplexity">
             <property name="max" value="7" />
         </module>
@@ -544,7 +544,7 @@
 # 命名规范检查
 
 ```
- <!--名字简写检查，不能出现连续的大写字母个数 default 3
+        <!--名字简写检查，不能出现连续的大写字母个数 default 3
             不包括 static ，final，重写方法-->
         <module name="AbbreviationAsWordInName" />
 
