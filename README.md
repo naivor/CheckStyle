@@ -1,7 +1,7 @@
 # 在多人协同开发中，保持代码风格一样是一件十分重要的事情，而checkstyle 可以帮助我们做到这一点
 
 
-# Checkstyle 可以做什么
+# 一. Checkstyle 可以做什么
 
 
 1.注解检查
@@ -13,9 +13,11 @@
 7.度量检查
 8.命名规范检查
 
+------
 
+# 二. Checkstyle 配置规则
 
-# 注解检查
+ * 注解检查
 
 ```
         <!-- 检查注解存在的位置
@@ -71,7 +73,7 @@
         </module>
 
 ```
-# 代码块检查
+ *  代码块检查
 
 ```
         <!--避免嵌套的代码块，如
@@ -141,7 +143,7 @@
 
 ```
 
-# 类检查
+ * 类检查
 
 ```
         <!--final 类检查，当类的构造方法为 private 时-->
@@ -175,7 +177,7 @@
 
 ```
 
-# 代码检查
+ * 代码检查
 
 ```
         <!--数组初始化末尾逗号检查-->
@@ -367,7 +369,7 @@
 
 ```
 
-# 文件头检查
+ * 文件头检查
 
 ```
         <!--检查文件的头部
@@ -390,7 +392,7 @@
 
 ```
 
-# 导包检查
+ * 导包检查
 
 ```
         <!-- 必须导入类的完整路径，即不能使用*导入所需的类 -->
@@ -508,7 +510,7 @@
 
 ```
 
-# 度量检查
+ * 度量检查
 
 ```
         <!--检查一个表达式中  &&, ||, &, | ， ^ 的最大允许个数-->
@@ -541,7 +543,7 @@
 
 ```
 
-# 命名规范检查
+ * 命名规范检查
 
 ```
         <!--名字简写检查，不能出现连续的大写字母个数 default 3
@@ -604,6 +606,40 @@
 
 ```
 
-# 其他检查...
+ * 其他检查...
+```
 
-# 去Checkstyle网站查看 [更多类容 ](http://checkstyle.sourceforge.net/index.html)
+```
+------
+
+# 三. Checkstyle的具体使用
+
+* 安装CheckStyle-IDEA 插件
+
+  ![这里写图片描述](http://img.blog.csdn.net/20170606110829508?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+* 添加CheckStyle 配置文件
+
+  ![这里写图片描述](http://img.blog.csdn.net/20170606111013593?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+* 代码检查中勾选CheckStyle
+
+  ![这里写图片描述](http://img.blog.csdn.net/20170606111102011?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+* 进行代码检查
+
+  * 通过checkstyle功能区
+
+    ![这里写图片描述](http://img.blog.csdn.net/20170606111147090?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+  * 通过右键检查当前文件
+
+    ![这里写图片描述](http://img.blog.csdn.net/20170606111221029?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+  * 通过gradle任务
+
+    ![这里写图片描述](http://img.blog.csdn.net/20170606111242970?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbmFpdm9y/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+------
+
+以上总结可能还有很多不到位的地方，欢迎大家指正和交流。
+
+去Checkstyle网站查看 [更多类容 ](http://checkstyle.sourceforge.net/index.html)
